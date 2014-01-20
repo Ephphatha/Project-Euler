@@ -5,7 +5,7 @@ from sieve import sieve
 def prime_factors(n):
   '''Find the prime factors of N'''
   factors = []
-  while n > 2:
+  while n > 1:
     for p in sieve(n):
       if n % p == 0 or n == p:
         factors.append(p)
@@ -15,4 +15,3 @@ def prime_factors(n):
 
 if __name__ == "__main__":
   print(max(prime_factors(600851475143)))
-
