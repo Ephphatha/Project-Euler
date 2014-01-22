@@ -19,5 +19,5 @@ def sieve(n):
     p += 1
 
 if __name__ == "__main__":
-  print(sieve(1000))
+  print([x for x in sieve(1000)])
 
